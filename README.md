@@ -2,6 +2,8 @@
 
 Integrate this API into your website to enable your customers to calculate the current costs of sending letters or parcels within Mauritius and overseas.
 
+The documentation can be viewed on SwaggerHub: [https://app.swaggerhub.com/apis/siven76/mauritius-post/](https://app.swaggerhub.com/apis/siven76/mauritius-post/)
+
 ## Getting Started
 
 Below you'll find tutorials and reference documentation that will teach you how to use the Postage Assessment Calculation API.
