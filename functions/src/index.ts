@@ -16,7 +16,7 @@ export const webApi = functions.https.onRequest(main);
 
 app.get('/test', (request, response) => {
 
-    response.send('Mauritius Post - PAC API');
+    response.send('Mauritius Post - Postage Assessment Calculator API');
 
 });
 
