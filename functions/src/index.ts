@@ -1,8 +1,20 @@
 import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
+import * as express from 'express';
+import * as bodyParser from "body-parser";
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-// export const helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+admin.initializeApp(functions.config().firebase);
+
+const app = express();
+const main = express();
+
+main.use('/api/v1', app);
+main.use(bodyParser.json());
+
+export const webApi = functions.https.onRequest(main);
+
+app.get('/test', (request, response) => {
+
+    response.send('Pellentesque auctor neque nec urna. Fusce risus nisl, viverra et, tempor et, pretium in, sapien.');
+
+})
