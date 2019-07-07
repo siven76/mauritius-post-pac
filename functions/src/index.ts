@@ -15,6 +15,6 @@ export const webApi = functions.https.onRequest(main);
 
 app.get('/test', (request, response) => {
 
-    response.send('Pellentesque auctor neque nec urna. Fusce risus nisl, viverra et, tempor et, pretium in, sapien.');
+    response.send('Mauritius Post - PAC API');
 
 })
